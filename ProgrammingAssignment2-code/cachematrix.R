@@ -1,5 +1,8 @@
 
-## makeCacheMatrix instantiates a new vector, with environment having get,set,getCache and setCache methods
+## makeCacheMatrix instantiates a new special matrix
+## this matrix creates in its environment reference points to original matrix and its inverse
+## the reference point to inverse is used as cache
+## additionally, it creates 4 methods to get and set the matrix values and the inverse value
 ## returns the functions as part of a list
 
 makeCacheMatrix <- function(x = matrix()) {
